@@ -1,0 +1,100 @@
+\hypertarget{namespacemode1}{}\doxysection{mode1 Namespace Reference}
+\label{namespacemode1}\index{mode1@{mode1}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacemode1_af87c1c14314dcbeac6dbffb4e3756a9f}{ret\+\_\+status}} (status, result)
+\item 
+\mbox{\Hypertarget{namespacemode1_a6aa50a261226b0e5ac6cb51ff2fb4a2f}\label{namespacemode1_a6aa50a261226b0e5ac6cb51ff2fb4a2f}} 
+def {\bfseries Set\+Goal} (x, y)
+\item 
+def \mbox{\hyperlink{namespacemode1_ad4de7474815d306adad735fd548de622}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries msg}
+\item 
+\mbox{\Hypertarget{namespacemode1_af284658faa7c70268eaa5343e464a1b3}\label{namespacemode1_af284658faa7c70268eaa5343e464a1b3}} 
+{\bfseries goal\+\_\+msg} = Move\+Base\+Goal()
+\item 
+\mbox{\Hypertarget{namespacemode1_ab1560a7b740830fbb49b7a35682c71a2}\label{namespacemode1_ab1560a7b740830fbb49b7a35682c71a2}} 
+bool {\bfseries achieved} = False
+\item 
+\mbox{\Hypertarget{namespacemode1_a3c90f2ee326c68bbec4c45bbc9783872}\label{namespacemode1_a3c90f2ee326c68bbec4c45bbc9783872}} 
+int {\bfseries active\+\_\+} = 0
+\item 
+\mbox{\Hypertarget{namespacemode1_a62b327cdfcbe6d96f59b04c5b8b00418}\label{namespacemode1_a62b327cdfcbe6d96f59b04c5b8b00418}} 
+int {\bfseries desired\+\_\+position\+\_\+x} = 0
+\item 
+\mbox{\Hypertarget{namespacemode1_ade54fe3c514731d95e5f6f9f14afebf3}\label{namespacemode1_ade54fe3c514731d95e5f6f9f14afebf3}} 
+int {\bfseries desired\+\_\+position\+\_\+y} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: Modality1
+ :platform: Unix
+ :synopsis: Module for the first modality.
+
+.. moduleauthor:: Abdul Rauf <ar223565@gmail.com>
+
+Subscribes to:
+ none
+Publishes to:
+ none
+ 
+This node is needed to the first modality of the program. The node makes the robot autonomously reach a x,y position inserted by the user on the UI interface. It uses actionlib, which permits to us to make the code simplier and better. It is really important to say that we have three parameters that we get from the UI:
+ - ``active`` which is the variable determinating the status of the modality, if it's on or not.
+ - ``desired_position_x`` which communicates the desired x position.
+ - ``desired_position_y`` which communicates the desired y position.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacemode1_ad4de7474815d306adad735fd548de622}\label{namespacemode1_ad4de7474815d306adad735fd548de622}} 
+\index{mode1@{mode1}!main@{main}}
+\index{main@{main}!mode1@{mode1}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def mode1.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to start all the features. The function if active is toggled or not it will do different tasks, it will wait when it is 
+0 and it will check the situation of the robot and the task, obviously it is all helped by the action.
+
+Args:
+    none.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode1_af87c1c14314dcbeac6dbffb4e3756a9f}\label{namespacemode1_af87c1c14314dcbeac6dbffb4e3756a9f}} 
+\index{mode1@{mode1}!ret\_status@{ret\_status}}
+\index{ret\_status@{ret\_status}!mode1@{mode1}}
+\doxysubsubsection{\texorpdfstring{ret\_status()}{ret\_status()}}
+{\footnotesize\ttfamily def mode1.\+ret\+\_\+status (\begin{DoxyParamCaption}\item[{}]{status,  }\item[{}]{result }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to define the functionalities of the action, like advising the user of the goal received and other useful messages. We want the action to do the following dues:
+ - Advising the user Advising the user that the goal was cancelled.
+ - Advising the user that the goal was achieved.
+ - Advising the user that the goal was aborted because the timer expired.
+ - Advising the user that the goal was not accepted.
+
+Args:
+ none
+Returns:
+ none
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemode1_a0bfaf47ea7bbec333be5e27ce1da1e50}\label{namespacemode1_a0bfaf47ea7bbec333be5e27ce1da1e50}} 
+\index{mode1@{mode1}!msg@{msg}}
+\index{msg@{msg}!mode1@{mode1}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily string mode1.\+msg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \textcolor{stringliteral}{""" }}
+\DoxyCodeLine{2 \textcolor{stringliteral}{This node makes the robot autonomously reach a x,y position inserted by the user on the UI interface.}}
+\DoxyCodeLine{3 \textcolor{stringliteral}{It uses actionlib, which permits to us to make the code simplier and better.}}
+\DoxyCodeLine{4 \textcolor{stringliteral}{"""}}
+
+\end{DoxyCode}

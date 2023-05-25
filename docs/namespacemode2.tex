@@ -1,0 +1,181 @@
+\hypertarget{namespacemode2}{}\doxysection{mode2 Namespace Reference}
+\label{namespacemode2}\index{mode2@{mode2}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmode2_1_1_publish_thread}{Publish\+Thread}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacemode2_a30df2fc74ea06ad7872befe07e7436bd}{get\+Key}} (key\+\_\+timeout)
+\item 
+def \mbox{\hyperlink{namespacemode2_ac9bca176331f9f8e910ceab482cd13ec}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries msg}
+\item 
+dictionary {\bfseries move\+Bindings}
+\item 
+dictionary {\bfseries speed\+Bindings}
+\item 
+int \mbox{\hyperlink{namespacemode2_ac82be9a987c9ce739bc8f87420a50a97}{boolprint}} = 1
+\item 
+\mbox{\Hypertarget{namespacemode2_a079c0f4dd5bb2ea9ec0701fdc2d2c35e}\label{namespacemode2_a079c0f4dd5bb2ea9ec0701fdc2d2c35e}} 
+{\bfseries settings} = termios.\+tcgetattr(sys.\+stdin)
+\item 
+\mbox{\Hypertarget{namespacemode2_a1a18d022468caf13e9b88dd9ff60aab2}\label{namespacemode2_a1a18d022468caf13e9b88dd9ff60aab2}} 
+{\bfseries speed} = rospy.\+get\+\_\+param(\char`\"{}$\sim$speed\char`\"{}, 0.\+5)
+\item 
+\mbox{\Hypertarget{namespacemode2_a865b2197f17b7f3c03d645f246e86a65}\label{namespacemode2_a865b2197f17b7f3c03d645f246e86a65}} 
+{\bfseries turn} = rospy.\+get\+\_\+param(\char`\"{}$\sim$turn\char`\"{}, 1.\+0)
+\item 
+\mbox{\Hypertarget{namespacemode2_aa184045853d4502b6e5529c99d312b7a}\label{namespacemode2_aa184045853d4502b6e5529c99d312b7a}} 
+{\bfseries repeat} = rospy.\+get\+\_\+param(\char`\"{}$\sim$repeat\+\_\+rate\char`\"{}, 0.\+0)
+\item 
+\mbox{\Hypertarget{namespacemode2_acfa112e81a734d52a2da06eeb931d83e}\label{namespacemode2_acfa112e81a734d52a2da06eeb931d83e}} 
+{\bfseries key\+\_\+timeout} = rospy.\+get\+\_\+param(\char`\"{}$\sim$key\+\_\+timeout\char`\"{}, 0.\+1)
+\item 
+\mbox{\Hypertarget{namespacemode2_aa837753357755d1e66a56509e81e8bcf}\label{namespacemode2_aa837753357755d1e66a56509e81e8bcf}} 
+{\bfseries pub\+\_\+thread} = \mbox{\hyperlink{classmode2_1_1_publish_thread}{Publish\+Thread}}(repeat)
+\item 
+\mbox{\Hypertarget{namespacemode2_a450a1601e7bac77d2db36a16fe4cdd28}\label{namespacemode2_a450a1601e7bac77d2db36a16fe4cdd28}} 
+int {\bfseries x} = 0
+\item 
+\mbox{\Hypertarget{namespacemode2_a8e3546dd38c07b9826336736075273c9}\label{namespacemode2_a8e3546dd38c07b9826336736075273c9}} 
+int {\bfseries y} = 0
+\item 
+\mbox{\Hypertarget{namespacemode2_a8203d1760ab90f69902831c861d8b84b}\label{namespacemode2_a8203d1760ab90f69902831c861d8b84b}} 
+int {\bfseries z} = 0
+\item 
+\mbox{\Hypertarget{namespacemode2_a8ec308a4ac3827416c6703149db01775}\label{namespacemode2_a8ec308a4ac3827416c6703149db01775}} 
+int {\bfseries th} = 0
+\item 
+\mbox{\Hypertarget{namespacemode2_a80e709edba9422e0ecd7d3eb813ae7a5}\label{namespacemode2_a80e709edba9422e0ecd7d3eb813ae7a5}} 
+int {\bfseries status} = 0
+\item 
+\mbox{\Hypertarget{namespacemode2_afd0d2980d3d91dc77b43040d30acd5d0}\label{namespacemode2_afd0d2980d3d91dc77b43040d30acd5d0}} 
+def {\bfseries key} = \mbox{\hyperlink{namespacemode2_a30df2fc74ea06ad7872befe07e7436bd}{get\+Key}}(key\+\_\+timeout)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: Modality2
+ :platform: Unix
+ :synopsis: Module for the second modality.
+
+.. moduleauthor:: Abdul Rauf <ar223565@gmail.com>
+ 
+This code is just the already existing teleop_twist_keyboard package on ROS. Some of the code has been modified in  order to incorporate
+the script with the final_assignment package. Some code won't be commented as gar as you can check the ROS wiki package of it by googling it.
+Anyway, here's the link for getting deeper in the code: http://wiki.ros.org/teleop_twist_keyboard\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacemode2_a30df2fc74ea06ad7872befe07e7436bd}\label{namespacemode2_a30df2fc74ea06ad7872befe07e7436bd}} 
+\index{mode2@{mode2}!getKey@{getKey}}
+\index{getKey@{getKey}!mode2@{mode2}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily def mode2.\+get\+Key (\begin{DoxyParamCaption}\item[{}]{key\+\_\+timeout }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to get the input from the keyboard without having the need to wait for the user to press enter.
+
+Args:
+ key_timeout
+Returns:
+ the key.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode2_ac9bca176331f9f8e910ceab482cd13ec}\label{namespacemode2_ac9bca176331f9f8e910ceab482cd13ec}} 
+\index{mode2@{mode2}!main@{main}}
+\index{main@{main}!mode2@{mode2}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def mode2.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    The main here is really important because as the different input arrives it changes the key moving the robots.
+    As the other two modalities, we have again ``active`` which permits the user to use the modality as he wants.\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemode2_ac82be9a987c9ce739bc8f87420a50a97}\label{namespacemode2_ac82be9a987c9ce739bc8f87420a50a97}} 
+\index{mode2@{mode2}!boolprint@{boolprint}}
+\index{boolprint@{boolprint}!mode2@{mode2}}
+\doxysubsubsection{\texorpdfstring{boolprint}{boolprint}}
+{\footnotesize\ttfamily int mode2.\+boolprint = 1}
+
+\begin{DoxyVerb}In this code we don't have the main function but we just use the famous if __name__ of python.
+The code here is needed.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode2_a7992c297672ead24a134050278300570}\label{namespacemode2_a7992c297672ead24a134050278300570}} 
+\index{mode2@{mode2}!moveBindings@{moveBindings}}
+\index{moveBindings@{moveBindings}!mode2@{mode2}}
+\doxysubsubsection{\texorpdfstring{moveBindings}{moveBindings}}
+{\footnotesize\ttfamily dictionary mode2.\+move\+Bindings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2         \textcolor{stringliteral}{'i'}:(1,0,0,0),}
+\DoxyCodeLine{3         \textcolor{stringliteral}{'o'}:(1,0,0,-\/1),}
+\DoxyCodeLine{4         \textcolor{stringliteral}{'j'}:(0,0,0,1),}
+\DoxyCodeLine{5         \textcolor{stringliteral}{'l'}:(0,0,0,-\/1),}
+\DoxyCodeLine{6         \textcolor{stringliteral}{'u'}:(1,0,0,1),}
+\DoxyCodeLine{7         \textcolor{stringliteral}{','}:(-\/1,0,0,0),}
+\DoxyCodeLine{8         \textcolor{stringliteral}{'.'}:(-\/1,0,0,1),}
+\DoxyCodeLine{9         \textcolor{stringliteral}{'m'}:(-\/1,0,0,-\/1),}
+\DoxyCodeLine{10         \textcolor{stringliteral}{'O'}:(1,-\/1,0,0),}
+\DoxyCodeLine{11         \textcolor{stringliteral}{'I'}:(1,0,0,0),}
+\DoxyCodeLine{12         \textcolor{stringliteral}{'J'}:(0,1,0,0),}
+\DoxyCodeLine{13         \textcolor{stringliteral}{'L'}:(0,-\/1,0,0),}
+\DoxyCodeLine{14         \textcolor{stringliteral}{'U'}:(1,1,0,0),}
+\DoxyCodeLine{15         \textcolor{stringliteral}{'<'}:(-\/1,0,0,0),}
+\DoxyCodeLine{16         \textcolor{stringliteral}{'>'}:(-\/1,-\/1,0,0),}
+\DoxyCodeLine{17         \textcolor{stringliteral}{'M'}:(-\/1,1,0,0),}
+\DoxyCodeLine{18         \textcolor{stringliteral}{'t'}:(0,0,1,0),}
+\DoxyCodeLine{19         \textcolor{stringliteral}{'b'}:(0,0,-\/1,0),}
+\DoxyCodeLine{20     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacemode2_acf158e9bbb391c3197c77d2ca8bfb976}\label{namespacemode2_acf158e9bbb391c3197c77d2ca8bfb976}} 
+\index{mode2@{mode2}!msg@{msg}}
+\index{msg@{msg}!mode2@{mode2}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily string mode2.\+msg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \textcolor{stringliteral}{""" }}
+\DoxyCodeLine{2 \textcolor{stringliteral}{}}
+\DoxyCodeLine{3 \textcolor{stringliteral}{This node makes the robot move with some keys, here's the list, enjoy!}}
+\DoxyCodeLine{4 \textcolor{stringliteral}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{5 \textcolor{stringliteral}{}}
+\DoxyCodeLine{6 \textcolor{stringliteral}{Moving around:}}
+\DoxyCodeLine{7 \textcolor{stringliteral}{        i     }}
+\DoxyCodeLine{8 \textcolor{stringliteral}{   j    k    l}}
+\DoxyCodeLine{9 \textcolor{stringliteral}{}}
+\DoxyCodeLine{10 \textcolor{stringliteral}{anything else : stop}}
+\DoxyCodeLine{11 \textcolor{stringliteral}{q/z : increase/decrease max speeds by 10\%}}
+\DoxyCodeLine{12 \textcolor{stringliteral}{w/x : increase/decrease only linear speed by 10\%}}
+\DoxyCodeLine{13 \textcolor{stringliteral}{e/c : increase/decrease only angular speed by 10\%}}
+\DoxyCodeLine{14 \textcolor{stringliteral}{}}
+\DoxyCodeLine{15 \textcolor{stringliteral}{"""}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacemode2_a274db465d866bcb10db0d028267b4529}\label{namespacemode2_a274db465d866bcb10db0d028267b4529}} 
+\index{mode2@{mode2}!speedBindings@{speedBindings}}
+\index{speedBindings@{speedBindings}!mode2@{mode2}}
+\doxysubsubsection{\texorpdfstring{speedBindings}{speedBindings}}
+{\footnotesize\ttfamily dictionary mode2.\+speed\+Bindings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2         \textcolor{stringliteral}{'q'}:(1.1,1.1),}
+\DoxyCodeLine{3         \textcolor{stringliteral}{'z'}:(.9,.9),}
+\DoxyCodeLine{4         \textcolor{stringliteral}{'w'}:(1.1,1),}
+\DoxyCodeLine{5         \textcolor{stringliteral}{'x'}:(.9,1),}
+\DoxyCodeLine{6         \textcolor{stringliteral}{'e'}:(1,1.1),}
+\DoxyCodeLine{7         \textcolor{stringliteral}{'c'}:(1,.9),}
+\DoxyCodeLine{8     \}}
+
+\end{DoxyCode}
