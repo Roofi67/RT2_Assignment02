@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Mobile Robot Simulator’s documentation! &mdash; Mobile Robot Simulator 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Mobile Robot Simulator
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to Mobile Robot Simulator’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#module-scripts.UserInterface">UserInterface Module</a><ul>
+<li><a class="reference internal" href="#scripts.UserInterface.mode_switch"><code class="docutils literal notranslate"><span class="pre">mode_switch()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.mode1">Modality1 Module</a><ul>
+<li><a class="reference internal" href="#scripts.mode1.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.mode1.ret_status"><code class="docutils literal notranslate"><span class="pre">ret_status()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#modality2-module">Modality2 Module</a></li>
+<li><a class="reference internal" href="#modality3-module">Modality3 Module</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Mobile Robot Simulator</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to Mobile Robot Simulator’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-mobile-robot-simulator-s-documentation">
+<h1>Welcome to Mobile Robot Simulator’s documentation!<a class="headerlink" href="#welcome-to-mobile-robot-simulator-s-documentation" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+<section id="module-scripts.UserInterface">
+<span id="userinterface-module"></span><h1>UserInterface Module<a class="headerlink" href="#module-scripts.UserInterface" title="Permalink to this heading"></a></h1>
+<span class="target" id="module-UI"></span><p>This code is the core of the program. We need the user to choose one of the modality, so we have to active one while the others are
+waiting.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.UserInterface.mode_switch">
+<span class="sig-prename descclassname"><span class="pre">scripts.UserInterface.</span></span><span class="sig-name descname"><span class="pre">mode_switch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/UserInterface.html#mode_switch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.UserInterface.mode_switch" title="Permalink to this definition"></a></dt>
+<dd><p>This function will start the different modalities depending on what the user decides to choose. The variable boolprint is used to wait in the first modality the end of the task.
+The input is got with the function <code class="docutils literal notranslate"><span class="pre">input()</span></code>. This is the core of the program because it gives the user the possibility to choose
+the modality.</p>
+<p>it is important to say that the code manages the possibility of the first modality to cancel the goal to be reached.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>none.</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-scripts.mode1">
+<span id="modality1-module"></span><h1>Modality1 Module<a class="headerlink" href="#module-scripts.mode1" title="Permalink to this heading"></a></h1>
+<span class="target" id="module-Modality1"></span><dl class="simple">
+<dt>Subscribes to:</dt><dd><p>none</p>
+</dd>
+<dt>Publishes to:</dt><dd><p>none</p>
+</dd>
+<dt>This node is needed to the first modality of the program. The node makes the robot autonomously reach a x,y position inserted by the user on the UI interface. It uses actionlib, which permits to us to make the code simplier and better. It is really important to say that we have three parameters that we get from the UI:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">active</span></code> which is the variable determinating the status of the modality, if it’s on or not.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">desired_position_x</span></code> which communicates the desired x position.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">desired_position_y</span></code> which communicates the desired y position.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.mode1.main">
+<span class="sig-prename descclassname"><span class="pre">scripts.mode1.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/mode1.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.mode1.main" title="Permalink to this definition"></a></dt>
+<dd><p>Function to start all the features. The function if active is toggled or not it will do different tasks, it will wait when it is
+0 and it will check the situation of the robot and the task, obviously it is all helped by the action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>none.</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.mode1.ret_status">
+<span class="sig-prename descclassname"><span class="pre">scripts.mode1.</span></span><span class="sig-name descname"><span class="pre">ret_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/mode1.html#ret_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.mode1.ret_status" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Function to define the functionalities of the action, like advising the user of the goal received and other useful messages. We want the action to do the following dues:</dt><dd><ul class="simple">
+<li><p>Advising the user Advising the user that the goal was cancelled.</p></li>
+<li><p>Advising the user that the goal was achieved.</p></li>
+<li><p>Advising the user that the goal was aborted because the timer expired.</p></li>
+<li><p>Advising the user that the goal was not accepted.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>none</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>none</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="modality2-module">
+<h1>Modality2 Module<a class="headerlink" href="#modality2-module" title="Permalink to this heading"></a></h1>
+</section>
+<section id="modality3-module">
+<h1>Modality3 Module<a class="headerlink" href="#modality3-module" title="Permalink to this heading"></a></h1>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Abdul Rauf.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
