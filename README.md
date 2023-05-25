@@ -39,7 +39,8 @@ sphinx-quickstart
 ```
 
 After running the command, accept the defaults. It’ll look something like this: 
-![sphinxx](https://user-images.githubusercontent.com/17598805/230764633-739a37cb-4a3c-45db-9662-e91c9cac6de3.PNG)
+![sphinx](https://github.com/Roofi67/RT2_Assignment02/assets/95746070/da2d5850-6714-4a19-a918-e801758ea44c)
+
 
 ## Documentation Preparation
 
@@ -125,7 +126,8 @@ the sphinx layout).
 # Final Outcome
 To view the documentation visit the link given below:
 
-https://abdulbasit656.github.io/RT2_Assignment02__Sphinx/
+https://roofi67.github.io/RT2_Assignment02/
 
 This the url for the Sphinx Documentaion of the Mobile Robot Simulator.
-![github](https://user-images.githubusercontent.com/17598805/230764861-eaabba9e-a9a3-44c6-be1d-f75a14c0f0fd.PNG)
+![image](https://github.com/Roofi67/RT2_Assignment02/assets/95746070/7a798b86-b9de-47e1-aaa0-12f652578fcc)
+
