@@ -1,0 +1,67 @@
+\hypertarget{namespace_user_interface}{}\doxysection{User\+Interface Namespace Reference}
+\label{namespace_user_interface}\index{UserInterface@{UserInterface}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_user_interface_a6d76b893a68bb29b41c7a0a95e84f48d}{mode\+\_\+switch}} ()
+\item 
+\mbox{\Hypertarget{namespace_user_interface_a6ec5ecc5097a12d2faca586e0b580f19}\label{namespace_user_interface_a6ec5ecc5097a12d2faca586e0b580f19}} 
+def {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries msg}
+\item 
+\mbox{\Hypertarget{namespace_user_interface_adc040030befde975be8be9e242c453f1}\label{namespace_user_interface_adc040030befde975be8be9e242c453f1}} 
+bool {\bfseries boolprint} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: UI
+ :platform: Unix
+ :synopsis: Module for the user interface.
+
+.. moduleauthor:: Abdul Rauf <ar223565@gmail.com>
+ 
+This code is the core of the program. We need the user to choose one of the modality, so we have to active one while the others are 
+waiting.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_user_interface_a6d76b893a68bb29b41c7a0a95e84f48d}\label{namespace_user_interface_a6d76b893a68bb29b41c7a0a95e84f48d}} 
+\index{UserInterface@{UserInterface}!mode\_switch@{mode\_switch}}
+\index{mode\_switch@{mode\_switch}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{mode\_switch()}{mode\_switch()}}
+{\footnotesize\ttfamily def User\+Interface.\+mode\+\_\+switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function will start the different modalities depending on what the user decides to choose. The variable boolprint is used to wait in the first modality the end of the task.
+The input is got with the function ``input()``. This is the core of the program because it gives the user the possibility to choose
+the modality.
+
+it is important to say that the code manages the possibility of the first modality to cancel the goal to be reached.
+
+Args:
+    none.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_user_interface_ab9775f917052917862e7604c4ef97fb5}\label{namespace_user_interface_ab9775f917052917862e7604c4ef97fb5}} 
+\index{UserInterface@{UserInterface}!msg@{msg}}
+\index{msg@{msg}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily string User\+Interface.\+msg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \textcolor{stringliteral}{""" }}
+\DoxyCodeLine{2 \textcolor{stringliteral}{}}
+\DoxyCodeLine{3 \textcolor{stringliteral}{    Press key 1 for autonomous drive of the robot}}
+\DoxyCodeLine{4 \textcolor{stringliteral}{    Press key 2 for manual driving of the robot}}
+\DoxyCodeLine{5 \textcolor{stringliteral}{    Press key 3 for manual driving of the robot with collision avoidance}}
+\DoxyCodeLine{6 \textcolor{stringliteral}{    Press key 4 for quitting the system}}
+\DoxyCodeLine{7 \textcolor{stringliteral}{    """}}
+
+\end{DoxyCode}
